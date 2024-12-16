@@ -2,7 +2,8 @@ require('dotenv').config();
 const { Bot } = require('grammy');
 const puppeteer = require('puppeteer');
 
-const bot = new Bot(process.env.BOT_API_KEY);
+// Добавление API-ключа прямо в код
+const bot = new Bot('7735841146:AAEpOCYx0dMOdSlNwlRZ6cFK1_JU_1Qadp0');
 
 bot.command('start', async (ctx) => {
   await ctx.reply('Привет! Напиши название фильма :)');
